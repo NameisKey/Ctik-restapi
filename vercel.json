@@ -1,13 +1,13 @@
 {
     "version": 2,
     "name": "ctik-restapi",
-    "builds":[
-        {"src": "app.js",
-        "use" : "@vercel/node"}
-    ],
-    "routes":[
-        {"src": "/(.*)",
-        "use" : "/app.js"
+    "builds":[{
+        "src": "app.js",
+        "use" : "@vercel/node"
+    }],
+    "routes":[{
+        "src": "/(.*)",
+        "dest" : "/app.js"
     }]
 
 }
